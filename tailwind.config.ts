@@ -9,8 +9,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primaryBg: "#15202B", // Dark Grayish Blue (Background)
+        primaryText: "#FFFFFF", // White (Text)
+        accent: "#1DA1F2", // Blue (Links & Buttons)
+        borderGray: "#38444D", // Gray (Borders & Dividers)
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        system: [
+          '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto',
+          '"Helvetica Neue"', 'Arial', 'sans-serif'
+        ],
       },
     },
   },
