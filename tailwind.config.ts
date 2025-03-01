@@ -9,10 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        primaryBg: "#15202B", // Dark Grayish Blue (Background)
+        primaryBg: "#000000", // Pure Black (Background)
         primaryText: "#FFFFFF", // White (Text)
-        accent: "#1DA1F2", // Blue (Links & Buttons)
-        borderGray: "#38444D", // Gray (Borders & Dividers)
+        accent: "#1DA1F2", // Instagram Blue (Links & Buttons)
+        borderGray: "#262626", // Dark Gray (Borders & Dividers)
+        mutedText: "#A8A8A8", // Soft Gray (Secondary Text)
+        hoverBlue: "#1A91DA", // Slightly Brighter Blue (Hover State)
+        inputBg: "#121212", // Darker Black (Input Fields, Cards)
+        errorRed: "#E0245E", // Red (Errors & Warnings)
+        successGreen: "#17BF63", // Green (Success Messages)
+        warningOrange: "#F45D22", // Orange (Warnings)
       },
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
