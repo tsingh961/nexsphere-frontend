@@ -37,7 +37,7 @@ const Sidebar = () => {
       {!isMobile && (
         <aside className="fixed left-0 top-0 h-full w-64 bg-black text-white p-5 flex flex-col border-r border-gray-800">
           {/* Logo */}
-          <h1 className="text-2xl font-bold mb-8">Instagram</h1>
+          <h1 className="text-2xl font-bold mb-8">Nexsphere</h1>
 
           {/* Menu Items */}
           <nav className="flex flex-col gap-2">

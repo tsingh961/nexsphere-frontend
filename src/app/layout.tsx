@@ -3,6 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar/Sidebar";
 import { usePathname } from "next/navigation";
+import { metadata } from "./metadata";
+
+interface metadata {
+  title: string;
+  description: string;
+}
 
 const inter = Inter({
   subsets: ["latin"],
@@ -18,7 +24,8 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <title>Nexsphere</title>
+      <title>{metadata.title}</title>
+      <meta name="description" content={metadata.description} />
       <body
         className={`${inter.className} antialiased bg-primaryBg text-primaryText`}
       >
