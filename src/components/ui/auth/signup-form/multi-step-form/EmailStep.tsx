@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
+import Link from 'next/link';
 
 const EmailStep = ({ onSubmit }) => {
   const [email, setEmail] = useState('');
@@ -44,9 +45,9 @@ const EmailStep = ({ onSubmit }) => {
         <Mail size={28} className="text-indigo-400" />
       </div>
       
-      <h2 className="text-2xl font-bold text-white mb-2">Welcome Back</h2>
+      <h2 className="text-2xl font-bold text-white mb-2">Create Your Account</h2>
       <p className="text-gray-400 mb-8 text-center">
-        Enter your email to continue to your account
+        Enter your email to get started
       </p>
       
       <form onSubmit={handleSubmit} className="w-full">
@@ -76,6 +77,13 @@ const EmailStep = ({ onSubmit }) => {
           {isChecking ? 'Checking...' : 'Continue'}
         </button>
       </form>
+
+      <p className="mt-6 text-sm text-gray-400">
+        Already have an account?{' '}
+        <Link href="/auth/login" className="text-indigo-400 hover:text-indigo-300">
+          Log in here
+        </Link>
+      </p>
     </motion.div>
   );
 };

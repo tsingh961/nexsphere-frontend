@@ -1,5 +1,5 @@
 "use client"
-import MultiStepForm from '@/components/ui/auth/MultiStepForm'
+import MultiStepForm from '@/components/ui/auth/signup-form/MultiStepForm'
 import React from 'react'
 
 function SignUp() {

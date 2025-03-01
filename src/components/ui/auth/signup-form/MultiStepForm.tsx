@@ -1,5 +1,5 @@
 import React from 'react'
-import AuthForm from './MultiStepForm/AuthForm'
+import AuthForm from './multi-step-form/AuthForm'
 
 function MultiStepForm() {
   return (
