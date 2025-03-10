@@ -30,7 +30,7 @@ const pageTransition = {
 const AuthForm = () => {
   const [step, setStep] = useState(0);
   const [email, setEmail] = useState('');
-  const [otp, setOtp] = useState('');
+  const [otp, setOtp] = useState<number | null>(null);
   const [formData, setFormData] = useState({
     fullName: '',
     dateOfBirth: '',
@@ -38,23 +38,23 @@ const AuthForm = () => {
     confirmPassword: '',
   });
 
-  const handleEmailSubmit = (email) => {
+  const handleEmailSubmit = (email: string) => {
     setEmail(email);
     setStep(1);
   };
 
-  const handleOtpSubmit = (otp) => {
+  const handleOtpSubmit = (otp: number) => {
     setOtp(otp);
     setStep(2);
   };
 
-  const handleRegistrationSubmit = (data) => {
+  const handleRegistrationSubmit = (data: any) => {
     setFormData(data);
     console.log('Registration complete', { email, otp, ...data });
     setTimeout(() => {
       setStep(0);
       setEmail('');
-      setOtp('');
+      setOtp(null);
       setFormData({
         fullName: '',
         dateOfBirth: '',
